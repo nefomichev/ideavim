@@ -1,0 +1,18 @@
+let mapleader=" "
+
+inoremap jk <esc> 
+vnoremap jk <esc>
+
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>h <c-w>h
+nnoremap <leader>l <c-w>l
+
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>V :split<CR>
+
+map <leader>f <Action>(GotoFile)
+map <leader>g <Action>(FindInPath)
+map <leader>n <Action>(NewFile)
+map <leader>e <Action>(ActivateProjectToolWindow)
+map <leader>t <Action>(ActivateTerminalToolWindow)
