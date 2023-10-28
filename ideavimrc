@@ -1,7 +1,36 @@
+Plug 'preservim/nerdtree'
+
+" Options
+set autoindent
+set backspace=indent,eol,start
+set clipboard+=unnamedplus
+set cursorline
+set expandtab
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set ignorecase
+set mouse=a
+set number
+set relativenumber
+set scrolloff=4
+set shiftwidth=2
+set showmode
+set signcolumn=yes
+set smartcase
+set smartindent
+set spelllang=en
+set splitbelow
+set splitright
+set noswapfile
+set tabstop=2
+set termguicolors
+set undodir=$HOME/.undodir
+set undofile
+set undolevels=100
+set nowrap
+
 let mapleader=" "
 
-inoremap jk <esc> 
-vnoremap jk <esc>
 
 nnoremap <leader>j <c-w>j
 nnoremap <leader>k <c-w>k
@@ -14,5 +43,8 @@ nnoremap <leader>V :split<CR>
 map <leader>f <Action>(GotoFile)
 map <leader>g <Action>(FindInPath)
 map <leader>n <Action>(NewFile)
-map <leader>e <Action>(ActivateProjectToolWindow)
+map <leader>e :NERDTreeToggle<CR>
 map <leader>t <Action>(ActivateTerminalToolWindow)
+map <leader>w :close<CR>
+
+
